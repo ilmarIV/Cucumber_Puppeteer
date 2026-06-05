@@ -26,9 +26,12 @@ import './App.css';
     <>
       <div className='calculator'>
         <h2>Calculator App</h2>
-        <input type="text"
-        placeholder='0'
-        value={value}/>
+        <input
+          data-testid="display"
+          type="text"
+          placeholder='0'
+          value={value}
+        />
         <div>
         <button onClick={AC}>AC</button>
         <button onClick={Del}>Del</button>
